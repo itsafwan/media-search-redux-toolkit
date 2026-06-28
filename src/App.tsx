@@ -1,8 +1,9 @@
 
+
 const App = () => {
   return (
-    <div>
-      App
+    <div className="h-screen w-full text-white  bg-gray-950">
+      <h1>App</h1>
     </div>
   )
 }
