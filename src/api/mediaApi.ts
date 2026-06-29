@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const UNSPLASH_KEY = import.meta.env.UNSPLASH_KEY as string
-const PEXELS_KEY = import.meta.env.PEXELS_KEY as string
-const GIPHY_KEY = import.meta.env.GIPHY_KEY as string
+const UNSPLASH_KEY = import.meta.env.VITE_UNSPLASH_KEY as string
+const PEXELS_KEY = import.meta.env.VITE_PEXELS_KEY as string
+const GIPHY_KEY = import.meta.env.VITE_GIPHY_KEY as string
 
 export async function fetchPhotos(query: string, page: number = 1, per_page: number = 20) {
   const res = await axios.get('https://api.unsplash.com/search/photos', {
