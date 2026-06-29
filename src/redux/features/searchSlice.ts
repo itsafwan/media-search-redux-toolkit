@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
-type ActiveTab = 'photos' | 'videos' | 'gifs'
+export type ActiveTab = 'photos' | 'videos' | 'gifs'
 
 interface SearchResult {
   id: string | number
@@ -48,6 +48,7 @@ const searchSlice = createSlice({
     clearResults(state) {
       state.results = []
     }
+    
   }
 })
 
